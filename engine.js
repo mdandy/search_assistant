@@ -54,6 +54,7 @@ function showError(msg) {
 	$(".error").text(msg);
 	$(".error").removeClass("hidden");
 	$(".microphone").addClass("hidden");
+	$(".transcript").addClass("hidden");
 }
 
 function showTranscript(transcript, isFinal) {
