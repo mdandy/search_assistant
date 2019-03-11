@@ -1,0 +1,56 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	font-family: Circular, Helvetica, Arial;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.hidden {
+	display: none;
+}
+
+.error {
+	background-color: #c23934;
+	font-size: 16px;
+	line-height: 1;
+	border-radius: 500px;
+	padding: 19px 56px 21px;
+}
+
+.microphone {
+	padding: 10px;
+}
+
+.active {
+	border-radius: 50px;
+	background-color: #04844b;
+	animation: shadow-pulse 1s infinite;
+}
+
+@keyframes shadow-pulse {
+	0% {
+		box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.4);
+	}
+	100% {
+		box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+	}
+}
+
+.transcript {
+	padding-left: 10px;
+}
+
+.transcript .interim {
+    color: gray;
+}
